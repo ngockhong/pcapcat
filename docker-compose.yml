@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pcap-catalog:
+    build: .
+    container_name: pcap-catalog
+    volumes:
+      # Mount local pcaps folder to container
+      - ./data/pcaps:/app/data/pcaps
+      # Mount database folder to persist data
+      - ./data:/app/data
+    # Keep container running for interactive use
+    stdin_open: true
+    tty: true
+    # Override default command to keep container alive
+    command: tail -f /dev/null

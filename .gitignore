@@ -1,0 +1,28 @@
+# ===== Python cache / build =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# ===== Virtual environments =====
+venv/
+.venv/
+env/
+
+# ===== Editor configs =====
+.vscode/
+.idea/
+
+# ===== System files =====
+.DS_Store
+Thumbs.db
+
+# ===== Project data =====
+data/pcaps/
+data/index.db
+
+# ===== Logs & temp =====
+*.log
+*.tmp
+*.bak
